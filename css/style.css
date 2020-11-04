@@ -1,0 +1,37 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100vw;
+}
+
+.row{
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
+.content{
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.row:last-child > .content {
+  justify-content: flex-end;
+}
+.row:first-child > .content {
+  justify-content:flex-start;
+}
+
+.content > div{
+  display: inline-block;
+  border: 1px solid black;
+  padding: 15px;
+}
