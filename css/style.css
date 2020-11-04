@@ -30,8 +30,9 @@ justify-content: center;
   justify-content:flex-start;
 }
 
-.content > div{
+.content > ul > li{
   display: inline-block;
   border: 1px solid black;
   padding: 15px;
+  list-style: none;
 }
