@@ -2,37 +2,166 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
-
-.container{
-  width: 100vw;
+nav{
+  flex: 0 0 80px;
 }
 
 .row{
- width: 100%;
- display: flex;
- flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-}
-
-.content{
-  border: 1px solid black;
+  width: 100%;
+  height: 80px;
   display: flex;
-  flex-wrap: wrap;
-
+  flex-wrap: nowrap;
 }
 
-.row:last-child > .content {
-  justify-content: flex-end;
+.content:first-child {
+  width: calc((100vw/12)*4);
+  height: 80px;
+ display: flex;
+ align-items: flex-end;
+ justify-content:flex-start;
 }
-.row:first-child > .content {
-  justify-content:flex-start;
+
+.content:last-child {
+  width: calc((100vw/12)*8);
+  height: 80px;
+ display: flex;
+ align-items: flex-end;
+ justify-content: flex-end;
+}
+
+.content >img {
+  height: 22px;
+  margin-bottom: 15px;
+  display: inline;
+  margin-left: 40px;
+  margin-right: 40px
+}
+
+.content > ul {
+  display: inline;
+}
+
+
+.content > button {
+  display: inline;
+  padding: 20px;
+  border:none;
+  border-radius: 5px;
+  margin-left:  10px;
+  font-size: 15px;
+}
+
+.content > button {
+  background-color: #dadadb;
+  color:black;
+}
+.content > button:last-child {
+  background-color: black;
+  color:white;
+  margin-right:10px;
+}
+
+.content > button:hover {
+  background-color:lightgrey;
+}
+
+.content > button:last-child:hover {
+  background-color: #3d4043;
+  color:white;
 }
 
 .content > ul > li{
   display: inline-block;
-  border: 1px solid black;
+
   padding: 15px;
   list-style: none;
+}
+
+.content > ul > li > a{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  color:grey;
+  margin: 0 5px;
+}
+
+.content > ul > li > a:hover{
+  color:black;
+}
+
+#clicked{
+  color: black;
+  font-weight: bold;
+}
+
+
+.slot > ul > li{
+  margin:40px 25px;
+  list-style: none;
+}
+
+.slot > ul > li > a{
+  color: grey;
+  text-decoration: none;
+
+}
+
+.slot > ul > li > a:hover{
+  color: black;
+}
+
+
+
+.features{
+  border: 1px solid #dedede;
+  background: white;
+  box-shadow: 10px 5px 10px #dedede;
+  border-radius: 5px;
+  position: absolute;
+  top: 81px;
+  right: 430px;
+  z-index:1;
+}
+
+.plans{
+  width: 200px;
+  background: white;
+  border: 1px solid #dedede;
+  box-shadow: 10px 5px 10px #dedede;
+  border-radius: 5px;
+  position: absolute;
+  top: 81px;
+  right: 300px;
+  z-index:2;
+}
+
+.about{
+  border: 1px solid #dedede;
+  background: white;
+  box-shadow: 10px 5px 10px #dedede;
+  border-radius: 5px;
+  position: absolute;
+  top: 81px;
+  right: 240px;
+  z-index:3;
+}
+
+.help{
+  border: 1px solid #dedede;
+  background: white;
+  box-shadow: 10px 5px 10px #dedede;
+  border-radius: 5px;
+  position: absolute;
+  top: 81px;
+  right: 140px;
+  z-index:4;
+}
+.dropdown{
+  display: none;
+}
+
+.dropdown.active{
+  display: block;
 }
