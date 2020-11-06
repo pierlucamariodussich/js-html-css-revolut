@@ -97,18 +97,18 @@ nav{
 }
 
 
-.slot > ul > li{
+.dropdown > ul > li{
   margin:40px 25px;
   list-style: none;
 }
 
-.slot > ul > li > a{
+.dropdown > ul > li > a{
   color: grey;
   text-decoration: none;
 
 }
 
-.slot > ul > li > a:hover{
+.dropdown > ul > li > a:hover{
   color: black;
 }
 
@@ -164,4 +164,8 @@ nav{
 
 .dropdown.active{
   display: block;
+}
+
+.black{
+  color: black;
 }
